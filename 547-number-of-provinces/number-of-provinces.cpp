@@ -13,7 +13,7 @@ public:
         int n = isConnected.size();
         vector<int>adjLs[n];
         for(int i=0;i<n;i++){
-            for(int j=0;j<n;j++){
+            for(int j=i+1;j<n;j++){
                 if(isConnected[i][j]==1 && i!=j){
                     adjLs[i].push_back(j);
                     adjLs[j].push_back(i);
